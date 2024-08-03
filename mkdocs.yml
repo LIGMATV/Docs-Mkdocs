@@ -1,0 +1,50 @@
+site_name: LIGMATV
+site_description: Without all these codes, life will become meaningless
+site_url: https://ligmatv.is-a.dev
+
+theme:
+  name: material
+  language: id
+  logo: img/logo.svg
+  favicon: img/logo.svg
+
+  palette: 
+
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+
+  font:
+    text: Figtree
+    code: Space Mono
+
+  features:
+    - content.code.copy
+
+plugins:
+  - search
+  - blog
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+    
